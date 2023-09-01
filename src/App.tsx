@@ -6,6 +6,7 @@ import Menu from "./components/menu/Menu";
 import "./styles/global.scss";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Users from "./pages/users/Users";
 const queryClient = new QueryClient();
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/users",
+          element: <Users />,
         },
       ],
     },
